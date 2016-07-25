@@ -287,12 +287,6 @@ class Object
                         ) {
                             // vertical offset
                             $text .= "\n";
-                        } elseif ($current_position_td['x'] !== false && floatval($x) > floatval(
-                                $current_position_td['x']
-                            )
-                        ) {
-                            // horizontal offset
-                            $text .= ' ';
                         }
                         $current_position_td = array('x' => $x, 'y' => $y);
                         break;
